@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    background: rgb(34,36,112);
+    background: linear-gradient(90deg, rgba(34,36,112,1) 0%, rgba(121,106,191,1) 50%, rgba(57,34,112,1) 100%);
+}
