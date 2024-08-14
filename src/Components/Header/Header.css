@@ -1,0 +1,18 @@
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 10dvh;
+    width: 100dvw;
+    border-bottom: 2px solid white;
+    box-shadow: 0 0 20px white;   
+}
+
+.title {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 0px 20px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 20px white;
+}

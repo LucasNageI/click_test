@@ -1,0 +1,115 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.click-test {
+    width: 500px;
+    height: 300px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    cursor: pointer;   
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    box-shadow: 0 0 20px white;
+}
+
+.click-test:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.times-clicked, .seconds {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0 0 20px white;
+    width: 150px;
+    height: 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.spans-container {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 500px) {
+
+    .click-test {
+        width: 350px;
+        height: 250px;
+        border-radius: 25px;
+    }
+
+    .click-to-start {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .click-test {
+        width: 400px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .click-to-start {
+        font-size: 20px;
+    }
+    
+    .times-clicked, .seconds {
+        width: 100px;
+        height: 30px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .click-test {
+        width: 250px;
+        height: 175px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px white;
+    }
+
+    .times-clicked, .seconds {
+        width: 75px;
+        height: 30px;
+        box-shadow: 0 0 15px white;
+    }
+
+    .click-to-start {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .click-test {
+        width: 150px;
+        height: 125px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px white;
+    }
+
+    .times-clicked, .seconds {
+        width: 50px;
+        box-shadow: 0 0 10px white;
+    }
+}

@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css'
+import { Header, AsideLeft, AsideRight, ClickTest } from './Components/index.js'
 
 function App() {
 
-    const [timesClicked, setClick] = useState(0)
 
-    const handleClickTest = () => {
-        setClick((prevClicks) => prevClicks + 1)
-    }
-
-  return (
-    <main className='main-page'>
-        <button onClick={handleClickTest} className='click-test'>click</button>
-        <span className='times-clicked'>{timesClicked}</span>
-    </main>
-  )
+    return (
+        <>
+            <Header />
+            <main className='main-container'>
+                <AsideLeft />
+                <ClickTest />
+                <AsideRight />
+            </main>
+        </>
+    )
 }
 
 export default App
