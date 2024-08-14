@@ -6,6 +6,6 @@
 }
 
 :root {
-    background: rgb(34,36,112);
-    background: linear-gradient(90deg, rgba(34,36,112,1) 0%, rgba(121,106,191,1) 50%, rgba(57,34,112,1) 100%);
+    background: rgb(0,77,121);
+    background: linear-gradient(45deg, rgba(0,77,121,1) 0%, rgba(0,28,63,1) 50%, rgba(82,22,56,1) 100%);
 }
