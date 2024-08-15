@@ -9,9 +9,9 @@ export const Header = () => {
     <header className='header'>
         <span className='title'>T   e   s   t   e   r</span>
         <nav className='header-nav'>
-            <a className='header-links' href="">C   l   i   c   k   i   n   g      T   e   s   t</a>
-            <a className='header-links' href="">T   y   p   i   n   g      T   e   s   t</a>
-            <a className='header-links' href=""> S   p   a   c   i   n   g      T   e   s   t</a>
+            <a className='header-links' href="">Clicking Test</a>
+            <a className='header-links' href="">Typing Test</a>
+            <a className='header-links' href="">Spacing Test</a>
         </nav>
     </header>
   )

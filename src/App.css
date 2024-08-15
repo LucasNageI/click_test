@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0px 30px;
-    width: 100dvw;
-    height: 100dvh;
+    justify-content: space-between;
+    margin-top: 10vh;
+    width: 100%;
+    height: 900px;
+    gap: 200px;
 }
 
 ul {
@@ -20,4 +21,34 @@ button {
 a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 1200px) {
+    .main-container {
+        height: 800px;
+        gap: 150px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .main-container {
+        height: 700px;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        gap: 100px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .main-container {
+        gap: 50px;
+    }
+
 }

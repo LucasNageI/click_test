@@ -6,5 +6,21 @@
 }
 
 :root {
-    background-color: #19212c;
+    background: rgb(25, 33, 44);
+    background: linear-gradient(45deg, rgba(25, 33, 44, 1) 0%, rgba(58, 65, 73, 1) 100%);
+    height: 120dvh;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #424242;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8ee1dd;
+    border-radius: 10px;
+    border: 1px solid #8ee1dd;
 }
