@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './ClickTest.css'
+import './ClickingTest.css'
 
-export const ClickTest = () => {
+export const ClickingTest = () => {
     const [is_counting, setChange] = useState(false)
     const [seconds, setSeconds] = useState(0)
 

@@ -7,25 +7,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    padding: 30px;
+    border: 2px solid #f1fffa;
+    box-shadow: 0 0 20px #f1fffa;
+    border-radius: 20px;
 }
 
 .click-test {
-    width: 500px;
-    height: 300px;
+    width: 700px;
+    height: 350px;
     border: none;
     border-radius: 20px;
     background-color: transparent;
     backdrop-filter: blur(10px);
-    border: 2px solid white;
+    border: 2px solid #27ba88;
     cursor: pointer;   
     color: rgb(255, 255, 255);
     font-size: 30px;
-    box-shadow: 0 0 20px white;
+    transition: all ease-in-out 0.1s;
 }
 
 .click-test:active {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #27ba892c;
 }
 
 
@@ -34,9 +37,9 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    color: white;
-    border: 2px solid white;
-    box-shadow: 0 0 20px white;
+    color: #f1fffa;
+    border: 2px solid #f1fffa;
+    box-shadow: 0 0 10px #f1fffa;
     width: 150px;
     height: 30px;
     margin-top: 50px;
@@ -86,13 +89,13 @@
         width: 250px;
         height: 175px;
         border-radius: 10px;
-        box-shadow: 0 0 15px white;
+        box-shadow: 0 0 15px #f1fffa;
     }
 
     .times-clicked, .seconds {
         width: 75px;
         height: 30px;
-        box-shadow: 0 0 15px white;
+        box-shadow: 0 0 15px #f1fffa;
     }
 
     .click-to-start {
@@ -105,11 +108,11 @@
         width: 150px;
         height: 125px;
         border-radius: 5px;
-        box-shadow: 0 0 10px white;
+        box-shadow: 0 0 10px #f1fffa;
     }
 
     .times-clicked, .seconds {
         width: 50px;
-        box-shadow: 0 0 10px white;
+        box-shadow: 0 0 10px #f1fffa;
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { Header, AsideLeft, AsideRight, ClickTest } from './Components/index.js'
+import { Header, SpacingTest, TypingTest, ClickingTest, TestSeconds } from './Components/index.js'
 
 function App() {
 
@@ -9,9 +9,8 @@ function App() {
         <>
             <Header />
             <main className='main-container'>
-                <AsideLeft />
-                <ClickTest />
-                <AsideRight />
+                <ClickingTest />
+                <TestSeconds />
             </main>
         </>
     )

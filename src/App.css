@@ -1,8 +1,11 @@
 .main-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0px 30px;
+    width: 100dvw;
+    height: 100dvh;
 }
 
 ul {
@@ -12,4 +15,9 @@ ul {
 button {
     background: none;
     border: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }

@@ -1,11 +1,14 @@
 import { Header } from "./Header/Header";
-import { AsideLeft } from "./AsideLeft/AsideLeft";
-import { AsideRight } from "./AsideRight/AsideRight";
-import { ClickTest } from "./ClickTest/ClickTest";
+import { SpacingTest } from "./SpacingTest/SpacingTest";
+import { TypingTest } from "./TypingTest/TypingTest";
+import { ClickingTest } from "./ClickingTest/ClickingTest";
+import { TestSeconds } from "./TestSeconds/TestSeconds";
 
 export {
-    AsideLeft,
-    AsideRight,
-    ClickTest,
-    Header
+    SpacingTest,
+    TypingTest,
+    ClickingTest,
+    Header,
+    TestSeconds
+    
 }
