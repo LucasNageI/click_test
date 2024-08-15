@@ -4,7 +4,7 @@
     justify-content: space-between;
     border: 1px solid #f1fffa;
     width: 1000px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px #f1fffa;
     flex-wrap: wrap;
@@ -19,7 +19,7 @@
     height: 30px;
     border: 1px solid #f1fffa;
     color: #f1fffa;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all ease-in-out 0.1s;
 }
@@ -27,6 +27,7 @@
 .test-seconds-list-item-span {
     color: #f1fffa;
     cursor: pointer;
+    font-size: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -55,6 +56,8 @@
     .test-seconds-list {
         width: 400px;
         border-radius: 10px;
+        padding: 10px;
+        gap: 10px;
     }
     
     .test-seconds-list-item {
@@ -65,11 +68,13 @@
 
 @media (max-width: 500px) {
     .test-seconds-list {
-        width: 300px;
+        width: 150px;
     }
     
     .test-seconds-list-item {
-        min-width: 100px;
+        min-width: 130px;
     }
-
+    .test-seconds-list-item {
+        font-size: 10px;
+    }
 }

@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     
     <header className='header'>
-        <span className='title'>T   e   s   t   e   r</span>
+        <span className='title'>Tester</span>
         <nav className='header-nav'>
             <a className='header-links' href="">Clicking Test</a>
             <a className='header-links' href="">Typing Test</a>

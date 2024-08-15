@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     margin-top: 10vh;
     width: 100%;
-    height: 900px;
-    gap: 200px;
+    gap: 100px;
 }
 
 ul {
@@ -25,7 +24,6 @@ a {
 
 @media (max-width: 1200px) {
     .main-container {
-        height: 800px;
         gap: 150px;
     }
 
@@ -33,8 +31,7 @@ a {
 
 @media (max-width: 1000px) {
     .main-container {
-        height: 700px;
-        gap: 10px;
+        gap: 120px;
     }
 
 }
@@ -47,8 +44,5 @@ a {
 }
 
 @media (max-width: 500px) {
-    .main-container {
-        gap: 50px;
-    }
 
 }

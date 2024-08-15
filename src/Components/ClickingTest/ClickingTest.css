@@ -42,8 +42,9 @@
     box-shadow: 0 0 10px #f1fffa;
     width: 150px;
     height: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 .spans-container {
@@ -88,6 +89,7 @@
 @media (max-width: 800px) {
     .main-page {
         border-radius: 10px;
+        padding: 20px;
     }
     .click-test {
         width: 350px;
@@ -96,11 +98,25 @@
     }
 
     .click-to-start {
-        font-size: 20px;
+        font-size: 12px;
     }
 }
 
 @media (max-width: 500px) {
+    .click-test {
+        width: 300px;
+        height: 125px;
+        border-radius: 5px;
+    }
+
+    .times-clicked, .seconds {
+        width: 50px;
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 375px) {
     .click-test {
         width: 250px;
         height: 125px;
