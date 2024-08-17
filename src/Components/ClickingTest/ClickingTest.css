@@ -32,7 +32,7 @@
 }
 
 
-.times-clicked, .seconds, .total-clicks {
+.times-clicked, .seconds, .total-clicks, .cps {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +52,14 @@
     gap: 20px;
 }
 
+.click-to-start-disabled {
+    background-color: red;
+    padding-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;}
 
 @media (max-width: 1200px) {
     .click-test {
@@ -64,7 +72,7 @@
         font-size: 20px;
     }
     
-    .times-clicked, .seconds, .total-clicks {
+    .times-clicked, .seconds, .total-clicks, .cps {
         width: 100px;
         height: 30px;
     }
@@ -76,7 +84,7 @@
         border-radius: 10px;
     }
 
-    .times-clicked, .seconds, .total-clicks {
+    .times-clicked, .seconds, .total-clicks, .cps {
         width: 75px;
         height: 30px;
     }
@@ -96,10 +104,6 @@
         height: 175px;
         border-radius: 10px;
     }
-
-    .click-to-start {
-        font-size: 12px;
-    }
 }
 
 @media (max-width: 500px) {
@@ -109,9 +113,10 @@
         border-radius: 5px;
     }
 
-    .times-clicked, .seconds, .total-clicks {
+    .times-clicked, .seconds, .total-clicks, .cps {
         width: 50px;
-        font-size: 12px;
+        padding: 2px;
+        font-size: 10px;
     }
     
 }
@@ -123,7 +128,7 @@
         border-radius: 5px;
     }
 
-    .times-clicked, .seconds, .total-clicks {
+    .times-clicked, .seconds, .total-clicks, .cps {
         width: 50px;
     }
 }
