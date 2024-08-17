@@ -20,9 +20,8 @@ export const ClickingTest = ({ seconds }) => {
             setTotalClicks(timesClicked)
             setDisabled(true)
 
-            // Calcular CPS y mostrarlo
             if (seconds > 0) {
-                setCps(totalClicks / seconds)
+                setCps(timesClicked / seconds)
             }
 
             setTimeout(() => {
