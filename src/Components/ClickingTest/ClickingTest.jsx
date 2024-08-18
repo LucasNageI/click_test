@@ -30,32 +30,33 @@ export const ClickingTest = ({ seconds }) => {
         }
     }, [remaining_seconds, is_counting, timesClicked, seconds, totalClicks])
 
-    const handleClickTest = () => {
-        if (!is_counting) {
-            setChange(true)
-            setClick(0)
-            setRemainingSeconds(seconds)
-
-            if (intervalRef.current) {
-                clearInterval(intervalRef.current)
+    const handleClickTest = (event) => {
+        if(event.detail === 0) { /* filtra todos los eventos del mouse */
+            return
+        }
+        else {
+            if (!is_counting) {
+                setChange(true)
+                setClick(0)
+                setRemainingSeconds(seconds)
+    
+                if (intervalRef.current) {
+                    clearInterval(intervalRef.current)
+                }
+    
+                intervalRef.current = setInterval(() => {
+                    setRemainingSeconds((prevRemainingSeconds) => prevRemainingSeconds - 1)
+                }, 1000)
+            } else {
+                setClick((prevClicks) => prevClicks + 1)
             }
-
-            intervalRef.current = setInterval(() => {
-                setRemainingSeconds((prevRemainingSeconds) => prevRemainingSeconds - 1)
-            }, 1000)
-        } else {
-            setClick((prevClicks) => prevClicks + 1)
         }
     }
 
     return (
         <section className='main-page'>
             <div className='click-test-container'>
-                <button 
-                    onClick={handleClickTest} 
-                    className={`click-test ${isDisabled ? 'click-to-start-disabled' : ''}`} 
-                    disabled={isDisabled}
-                >
+                <button onClick={handleClickTest} className={`click-test ${isDisabled ? 'click-to-start-disabled' : ''}`} disabled={isDisabled}>
                     <span className='click-to-start'>
                         {is_counting ? 'Counting...' : 'select seconds and click to start'}
                     </span>
@@ -65,10 +66,9 @@ export const ClickingTest = ({ seconds }) => {
             <div className='spans-container'>
                 <span className='times-clicked'>{timesClicked} clicks</span>
                 <span className='seconds'>{is_counting ? remaining_seconds : seconds} s</span>
-                <span className='total-clicks'>Total: {totalClicks}</span>
+                <span className='total-clicks'>total: {totalClicks}</span>
                 <span className='cps'>{cps.toFixed(2)} cps</span>
             </div>
         </section>
     )
 }
-
